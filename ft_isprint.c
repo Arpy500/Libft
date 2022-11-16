@@ -6,9 +6,11 @@
 /*   By: relouren <relouren@student.42.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 15:48:25 by relouren          #+#    #+#             */
-/*   Updated: 2022/11/10 15:48:25 by relouren         ###   ########.fr       */
+/*   Updated: 2022/11/16 17:19:50 by relouren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
