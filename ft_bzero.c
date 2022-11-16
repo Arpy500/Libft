@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: relouren <relouren@student.42.com>         +#+  +:+       +#+        */
+/*   By: relouren <relouren@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 14:07:43 by relouren          #+#    #+#             */
-/*   Updated: 2022/11/16 14:07:43 by relouren         ###   ########.fr       */
+/*   Updated: 2022/11/16 16:34:33 by relouren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_bzero(void *s, unsigned int n)
+#include "libft.h"
+
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;
 
