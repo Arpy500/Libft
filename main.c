@@ -5,6 +5,7 @@
 int main(void)
 {
 	// VARIABLES
+	char *str0 = "*Omae wa mou*";
 	char *str1 = "0123456789";
 	char *str2 = "";
 	char str3[] = "0123456789";
@@ -62,13 +63,21 @@ int main(void)
 	// ft_strlcpy
 	printf("ft_strlcpy tests:\n\tft_strlcpy(str7, str8, 0) : %zu\n\tstr7 : %s\n\n", ft_strlcpy(str7, str8, 0), str7);
 	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
 	// ft_strlcat
 	printf("ft_strlcat tests:\n\tft_strlcat(str8, str1, 0) : %zu\n\tstr8 : %s\n\n", ft_strlcat(str8, str1, 0), str8);
 	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
 	// ft_toupper
 	printf("ft_toupper tests:\n\tft_toupper('z') : %c\n\tft_toupper('Z') : %c\n\tft_toupper(42) : %c\n\n", ft_toupper('z'), ft_toupper('Z'), ft_toupper(42));
 	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
 	// ft_tolower
 	printf("ft_tolower tests:\n\tft_tolower('Z') : %c\n\tft_tolower('z') : %c\n\tft_tolower(42) : %c\n\n", ft_tolower('Z'), ft_tolower('z'), ft_tolower(42));
 	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+	// ft_strchr
+	printf("ft_strchr tests:\n\tft_strchr(str0, '7') : %s\n\tft_strchr(str0, ' ') : %s\n\tft_strchr(str0,  42) : %s\n\n", ft_strchr(str0, '7'), ft_strchr(str0, ' '), ft_strchr(str0, 42));
+	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 }
