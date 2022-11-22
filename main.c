@@ -60,10 +60,10 @@ int main(void)
 	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 	// ft_strlcpy
-	printf("ft_strlcpy tests:\n\tft_strlcpy(str7, str8, 3) : %zu\n\tstr7 : %s\n\n", ft_strlcpy(str7, str8, 3), str7);
+	printf("ft_strlcpy tests:\n\tft_strlcpy(str7, str8, 0) : %zu\n\tstr7 : %s\n\n", ft_strlcpy(str7, str8, 0), str7);
 	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// ft_strlcat
-	printf("ft_strlcat tests:\n\tft_strlcat(str8, str1, 30) : %zu\n\tstr8 : %s\n\n", ft_strlcat(str8, str1, 0), str8);
+	printf("ft_strlcat tests:\n\tft_strlcat(str8, str1, 0) : %zu\n\tstr8 : %s\n\n", ft_strlcat(str8, str1, 0), str8);
 	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 }
