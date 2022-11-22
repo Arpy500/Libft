@@ -79,5 +79,8 @@ int main(void)
 	// ft_strchr
 	printf("ft_strchr tests:\n\tft_strchr(str0, '7') : %s\n\tft_strchr(str0, ' ') : %s\n\tft_strchr(str0,  42) : %s\n\n", ft_strchr(str0, '7'), ft_strchr(str0, ' '), ft_strchr(str0, 42));
 	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// ft_strrchr
+	printf("ft_strrchr tests:\n\tft_strrchr(str0, '7') : %s\n\tft_strrchr(str0, ' ') : %s\n\tft_strrchr(str0,  42) : %s\n\n", ft_strrchr(str0, '7'), ft_strrchr(str0, ' '), ft_strrchr(str0, 42));
+	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 }
