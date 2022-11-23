@@ -7,6 +7,7 @@ int main(void)
 	// VARIABLES
 	char *str0 = "*Omae wa mou*";
 	char *str1 = "0123456789";
+	char *str1_2 = "9876543210";
 	char *str2 = "";
 	char str3[] = "0123456789";
 	char str4[11];
@@ -82,5 +83,7 @@ int main(void)
 	// ft_strrchr
 	printf("ft_strrchr tests:\n\tft_strrchr(str0, '7') : %s\n\tft_strrchr(str0, ' ') : %s\n\tft_strrchr(str0,  42) : %s\n\n", ft_strrchr(str0, '7'), ft_strrchr(str0, ' '), ft_strrchr(str0, 42));
 	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+	// ft_strncmp
+	printf("ft_strncmp tests:\n\tft_strncmp() : %d\n\tft_strncmp() : %d\n\tft_strncmp() : %d\n\n", ft_strncmp(str1, str1_2, 10), ft_strncmp(str1_2, str1, 3), ft_strncmp(str2, "\0", 1));
+	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
 }
