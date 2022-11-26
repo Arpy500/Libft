@@ -84,6 +84,9 @@ int main(void)
 	printf("ft_strrchr tests:\n\tft_strrchr(str0, '7') : %s\n\tft_strrchr(str0, ' ') : %s\n\tft_strrchr(str0,  42) : %s\n\n", ft_strrchr(str0, '7'), ft_strrchr(str0, ' '), ft_strrchr(str0, 42));
 	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// ft_strncmp
-	printf("ft_strncmp tests:\n\tft_strncmp() : %d\n\tft_strncmp() : %d\n\tft_strncmp() : %d\n\n", ft_strncmp(str1, str1_2, 10), ft_strncmp(str1_2, str1, 3), ft_strncmp(str2, "\0", 1));
+	printf("ft_strncmp tests:\n\tft_strncmp(str1, str1_2, 10) : %d\n\tft_strncmp(str1_2, str1, 3) : %d\n\tft_strncmp(str2, \"\\0\", 1) : %d\n\n", ft_strncmp(str1, str1_2, 10), ft_strncmp(str1_2, str1, 3), ft_strncmp(str2, "\0", 1));
+	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// ft_memchr
+	printf("ft_memchr tests:\n\tft_memchr(str1, '7', 10) : %s\n\tft_memchr(str0, 42, 15) : %s\n\tft_memchr() : %s\n\n", (char *)ft_memchr(str1, '7', 10), (char *)ft_memchr(str0, 42, 15), (char *)ft_memchr(str0, 150, 15));
 	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
 }
