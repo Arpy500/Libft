@@ -15,8 +15,9 @@ int main(void)
 	char str6[] = "4242424242";
 	char str7[3] = "Hi";
 	char str8[30] = "42Lisboa";
-	char mem1[] = "*\0\0\0";
-	int mem2;
+	char mem1[] = "*\0\0\0"; // 00000000 00000000 00000000 00101010			Note: bits menos significativos guardados
+	int mem2;																// nos endereços mais baixos (little endian)
+	int mem3 = 858927408; // 00110011 00110010 00110001 00110000 = '3' '2' '1' '0'
 	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -87,6 +88,9 @@ int main(void)
 	printf("ft_strncmp tests:\n\tft_strncmp(str1, str1_2, 10) : %d\n\tft_strncmp(str1_2, str1, 3) : %d\n\tft_strncmp(str2, \"\\0\", 1) : %d\n\n", ft_strncmp(str1, str1_2, 10), ft_strncmp(str1_2, str1, 3), ft_strncmp(str2, "\0", 1));
 	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// ft_memchr
-	printf("ft_memchr tests:\n\tft_memchr(str1, '7', 10) : %s\n\tft_memchr(str0, 42, 15) : %s\n\tft_memchr() : %s\n\n", (char *)ft_memchr(str1, '7', 10), (char *)ft_memchr(str0, 42, 15), (char *)ft_memchr(str0, 150, 15));
+	printf("ft_memchr tests:\n\tft_memchr(str1, '7', 10) : %s\n\tft_memchr(str0, 42, 15) : %s\n\tft_memchr(str0, 150, 15) : %s\n\n", (char *)ft_memchr(str1, '7', 10), (char *)ft_memchr(str0, 42, 15), (char *)ft_memchr(str0, 150, 15));
+	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// ft_memcmp
+	printf("ft_memcmp tests:\n\tft_memcmp(str1, &mem3, 4) : %d\n\tft_memcmp(str1+9, str1_2, 2) : %d\n\tft_memcmp(str0, str2, 10) : %d\n\n", ft_memcmp(str1, &mem3, 4), ft_memcmp(str1+9, str1_2, 2), ft_memcmp(str0, str2, 10));
 	// -------------------------------------------------------------------------------------------------------------------------------------------------------------
 }
