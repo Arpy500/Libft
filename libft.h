@@ -6,7 +6,7 @@
 /*   By: relouren <relouren@student.42.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 00:42:22 by relouren          #+#    #+#             */
-/*   Updated: 2022/12/07 16:08:36 by relouren         ###   ########.fr       */
+/*   Updated: 2022/12/07 18:53:46 by relouren         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,9 @@ int				ft_memcmp(const void *s1, const void *s2, size_t n);
 char			*ft_strnstr(const char *big, const char *little, size_t len);
 
 int				ft_atoi(const char *nptr);
+
+void			*ft_calloc(size_t nmemb, size_t size);
+
+char			*ft_strdup(const char *s);
 
 #endif
