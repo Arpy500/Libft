@@ -20,8 +20,12 @@ char	*ft_strdup(const char *s)
 
 	size = ft_strlen(s);
 	ptr = (char *)malloc(size + 1);
+	i = 0;
 	while (i < size)
-		ptr[i] = s[i++];
+	{
+		ptr[i] = s[i];
+		i++;
+	}
 	ptr[i] = '\0';
 	return (ptr);
 }
